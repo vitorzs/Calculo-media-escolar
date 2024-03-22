@@ -1,1 +1,1 @@
-# Calculo-media-escolar
+# Projeto inicial, realizado para aprendizado de comandos JavaScrpit 
