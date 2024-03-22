@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola</title>
+</head>
+<body>
+
+    <script>
+var nomes =["Igor","José","Maria"];
+var notasA = [8.0, 4.5, 9.0];
+var notasB  = [5.0, 10.0, 3.5]; 
+
+
+//Função média
+function media(n1,n2){
+    return(n1 + n2)/2;
+}
+
+//Função aprovado
+function aprovado(media){
+
+    if(media> 7){
+        return "Aprovado";
+    } else{
+        return "Reprovado";
+    }
+}
+
+
+for(var index in nomes){
+
+    var notas1 = notasA[index];
+    var notas2 = notasB[index];
+    var mediafinal = media(notas1,notas2) 
+
+    console.log(nomes[index] +
+                 " - " +
+                notas1 + 
+                " - " +
+                notas2 + 
+                " | Sua Média Final é = " +
+                mediafinal + 
+                " | Você foi - " +
+                aprovado(mediafinal))
+                
+                        
+}
+    </script>
+ 
+</body>
+</html>
